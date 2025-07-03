@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Dashboard from '../Childs/Dashboard/Dashboard';
+import Dashboard from './Dashboard';
 
 const ConditionalRouting = () => {
     const [showDashboard, setShowDashboard] = useState(false);

@@ -14,7 +14,7 @@
 
 
 import React from 'react';
-import ConditionalRouting from '../components/Sections/ConditionalRounting.jsx';
+import ConditionalRouting from '../components/ConditionalRounting.jsx';
 
 const Home = () => {
     const userData = JSON.parse(sessionStorage.getItem('userData'));
