@@ -4,8 +4,10 @@ import { Header } from '../components/Header';
 import Home from '../pages/Home';
 import Contact from '../pages/Contact';
 import About from '../pages/About';
-import { Login } from '../Features/Authentication/Login';
-import { Registor } from '../Features/Authentication/Registor';
+import { Login } from '../pages/Login';
+import { Registor } from '../pages/Registor';
+// import { Login } from '../Features/Authentication/Login';
+// import { Registor } from '../Features/Authentication/Registor';
 
 const AppRouting = () => {
     return (
