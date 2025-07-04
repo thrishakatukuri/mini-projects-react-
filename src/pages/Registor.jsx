@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // ✅ Correct
-import About from '../../pages/About'; 
+import About from './About'; 
 
 const Registor = () => {
     const navigateData = useNavigate();

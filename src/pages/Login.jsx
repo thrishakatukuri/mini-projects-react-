@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import About from '../../pages/About';
+import About from './About';
 const Login = () => {
     const navigateData = useNavigate();
     const [formData, setFormData] = useState({ name: '', email: '', password: '', mobile: '' });
