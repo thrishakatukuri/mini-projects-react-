@@ -25,17 +25,8 @@ const ConditionalRouting = () => {
             <div className="bg-gray-100 text-white p-4 rounded m-5">
                 <h1 className="font-bold text-red-800 text-xl mb-2">React Conditional Rendering Examples</h1>
                 <h6 className="text-xs text-blue-800 mb-3">Hover on Dashboard to see notifications</h6>
-
-                <div
-                    className="text-yellow-500 font-bold text-3xl cursor-pointer"
-                    onClick={() => setShowDashboard(true)}
-                    onDoubleClick={() => setShowDashboard(false)}> Dashboard</div>
-                    {showDashboard && (
-                    <div className="mt-4 bg-white text-black p-4 border text-xl rounded shadow-md"><Dashboard /></div> )}
-            </div>
-
+            <div className="text-yellow-500 font-bold text-3xl cursor-pointer" onClick={() => setShowDashboard(true)} onDoubleClick={() => setShowDashboard(false)}> Dashboard</div> {showDashboard && ( <div className="mt-4 bg-white text-black p-4 border text-xl rounded shadow-md"><Dashboard /></div> )}</div>
             <hr className="m-1" />
-
             <div className="bg-gray-100 text-black p-5 rounded m-5">
                 <label htmlFor="roleSelect" className="font-semibold mr-2">Select User Role:</label>
                 <select id="roleSelect" className="border bg-black text-white px-2 py-1 rounded" onChange={(e) => setRole(e.target.value)}>
@@ -44,10 +35,7 @@ const ConditionalRouting = () => {
                     <option value="Editor">Editor</option>
                     <option value="Viewer">Viewer</option>
                 </select>
-
-                <h1 className="mt-4 text-lg font-medium justify-center">
-                    Welcome {renderRoleContent() || "Guest"}
-                </h1>
+                <h1 className="mt-4 text-lg font-medium justify-center">Welcome {renderRoleContent() || "Guest"}</h1>
             </div>
         </div>
     );

@@ -50,57 +50,26 @@ const Login = () => {
                     </div>
 
                     <label htmlFor="name" className="text-2xl m-2 font-bold">Name:</label>
-                    <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="border rounded w-full p-2 mb-2 "
-                        required
+                    <input type="text" name="name" value={formData.name} onChange={handleChange} className="border rounded w-full p-2 mb-2 " required
                     />
 
                     <label htmlFor="password" className="text-2xl m-2  font-bold">Password:</label>
-                    <input
-                        type="password"
-                        name="password"
-                        value={formData.password}
-                        onChange={handleChange}
-                        className="border rounded w-full p-2 mb-2 "
-                        required
+                    <input type="password" name="password" value={formData.password} onChange={handleChange} className="border rounded w-full p-2 mb-2 " required
                     />
 
                     <label htmlFor="email" className="text-2xl m-2  font-bold">Email:</label>
-                    <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="border rounded w-full p-2 mb-2"
-                        required
+                    <input type="email" name="email" value={formData.email} onChange={handleChange} className="border rounded w-full p-2 mb-2" required
                     />
 
                     <label htmlFor="mobile" className="text-2xl m-2  font-bold">Mobile:</label>
-                    <input
-                        type="tel"
-                        name="mobile"
-                        value={formData.mobile}
-                        onChange={handleChange}
-                        className="border rounded w-full p-2 mb-4"
-                        required
+                    <input type="tel" name="mobile" value={formData.mobile} onChange={handleChange} className="border rounded w-full p-2 mb-4" required
                     />
 
                     {message && <p className="text-red-500 mb-4">{message}</p>}
 
                     <div className="w-full flex justify-center">
-                        <button
-                            type="submit"
-                            className="bg-yellow-500 hover:bg-gray-300 hover:cursor-pointer border px-8 py-2 my-3 mt-5 font-bold rounded text-2xl">
-                            Submit
-
-                        </button>
-                        <span className="hover:cursor-pointer px-2 py-2 my-3 mt-5 text-2xl">
-                            <Link to="/Registor" className=" font-bold ">Registor</Link></span>
-
+                        <button type="submit" className="bg-yellow-500 hover:bg-gray-300 hover:cursor-pointer border px-8 py-2 my-3 mt-5 font-bold rounded text-2xl"> Submit</button>
+                        <span className="hover:cursor-pointer px-2 py-2 my-3 mt-5 text-2xl"><Link to="/Registor" className=" font-bold ">Registor</Link></span>
                     </div>
                 </form>
             </div>

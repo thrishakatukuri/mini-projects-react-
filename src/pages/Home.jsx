@@ -1,18 +1,3 @@
-// import React from 'react';
-// import ConditionalRouting from '../components/Sections/ConditionalRounting.jsx';
-
-// const Home = () => {
-//     return (
-//         <>
-//         <h1>hi</h1>
-//             <ConditionalRouting />
-//         </>
-//     );
-// };
-
-// export default Home;
-
-
 import React from 'react';
 import ConditionalRouting from '../components/ConditionalRounting.jsx';
 
