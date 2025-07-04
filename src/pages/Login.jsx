@@ -3,7 +3,9 @@ import { useNavigate, Link } from 'react-router-dom';
 import About from './About';
 const Login = () => {
     const navigateData = useNavigate();
+
     const [formData, setFormData] = useState({ name: '', email: '', password: '', mobile: '' });
+
     const [message, setMessage] = useState('');
 
     const emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
@@ -45,25 +47,22 @@ const Login = () => {
         <div>
             <div className="bg-gray-100 mt-10 m-5 p-4 border rounded max-w-md mx-auto">
                 <form onSubmit={handleSignUp} className="flex flex-col items-start">
+                    
                     <div className="w-full text-center my-5">
                         <h1 className="text-5xl mb-5 font-bold text-yellow-500">Login</h1>
                     </div>
 
                     <label htmlFor="name" className="text-2xl m-2 font-bold">Name:</label>
-                    <input type="text" name="name" value={formData.name} onChange={handleChange} className="border rounded w-full p-2 mb-2 " required
-                    />
+                    <input type="text" name="name" value={formData.name} onChange={handleChange} className="border rounded w-full p-2 mb-2 " required/>
 
                     <label htmlFor="password" className="text-2xl m-2  font-bold">Password:</label>
-                    <input type="password" name="password" value={formData.password} onChange={handleChange} className="border rounded w-full p-2 mb-2 " required
-                    />
+                    <input type="password" name="password" value={formData.password} onChange={handleChange} className="border rounded w-full p-2 mb-2 " required/>
 
                     <label htmlFor="email" className="text-2xl m-2  font-bold">Email:</label>
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} className="border rounded w-full p-2 mb-2" required
-                    />
+                    <input type="email" name="email" value={formData.email} onChange={handleChange} className="border rounded w-full p-2 mb-2" required/>
 
                     <label htmlFor="mobile" className="text-2xl m-2  font-bold">Mobile:</label>
-                    <input type="tel" name="mobile" value={formData.mobile} onChange={handleChange} className="border rounded w-full p-2 mb-4" required
-                    />
+                    <input type="tel" name="mobile" value={formData.mobile} onChange={handleChange} className="border rounded w-full p-2 mb-4" required/>
 
                     {message && <p className="text-red-500 mb-4">{message}</p>}
 
